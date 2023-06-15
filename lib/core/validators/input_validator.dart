@@ -71,9 +71,9 @@ mixin Validation {
       StreamTransformer<String, String>.fromHandlers(handleData: (value, sink) {
     if (value.isEmpty) {
       sink.addError('This field cannot be empty');
-    } else if (value.length < VehiclesDealingChallenge.vinLength) {
+    } else if (value.length < VehicleAuctionChallenge.vinLength) {
       sink.addError(
-          'The VIN must have ${VehiclesDealingChallenge.vinLength} characters');
+          'The VIN must have ${VehicleAuctionChallenge.vinLength} characters');
     } else if (value.trimRight().contains(" ")) {
       sink.addError('This VIN cannot contain space characters');
     } else {

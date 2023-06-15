@@ -25,13 +25,13 @@ class AuctionRemoteDataSourceImpl implements AuctionRemoteDataSource {
     required String userId,
   }) async {
     final queryParameters = {"VIN": vin};
-    final response = await VehiclesDealingChallenge.httpClient.get(
+    final response = await VehicleAuctionChallenge.httpClient.get(
       Uri.https(
         ApiUtils.authority,
         ApiUtils.auctionSearchPath,
         queryParameters,
       ),
-      headers: {VehiclesDealingChallenge.user: userId},
+      headers: {VehicleAuctionChallenge.user: userId},
     );
     if (response.statusCode == 200) {
       return _parseSuccess(response);
