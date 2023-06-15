@@ -1,8 +1,8 @@
 # vehicle_auction__flutter_coding_challenge
 
-https://github.com/CarmineToriello95/vehicles_dealing_flutter_coding_challenge/assets/24319107/e3552062-6144-4419-bd4f-958830e26a74
-
 A Flutter challenge for a vehicle auction search scenario.
+
+https://github.com/CarmineToriello95/vehicle_auction_flutter_coding_challenge/assets/24319107/7a270e7c-edac-4377-98a7-39d0b200e8c3
 
 It requires:
 
